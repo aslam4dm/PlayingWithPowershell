@@ -1,0 +1,62 @@
+variables preceded by $ symbol
+
+array: @(.., .., ..)
+
+dict curly bracket and colon: @{x=y; a=b; c=d;...}
+
+e.g.
+$myDict = @{name="aslam"; age=25}
+myDict.name
+
+-------------------------------------------------
+user input: Read-Host
+print to screen: Write-Host
+strings: newline 
+`n
+
+-------------------------------------------------
+if ($x (operator) value/variable y)
+operators:
+-eq equal | -ne not equal
+-ge greater equal | -gt greater
+-lt less than | -le less equal
+
+-------------------------------------------------
+empty list: 
+$emptyList @()
+append to list $emptyList += value
+e.g.
+foreach ($line in cat C:\Users\user\Desktop\file.txt){
+	$emptyList += $line }
+
+foreach ($line in get-content file.txt){
+	$emptyList += $line
+}
+
+
+
+determine type by preceding variable with [type] e.g.
+[int32]$age
+
+-------------------------------------------------
+$name = Read-Host "Please enter your name"
+>> [int]$numOfPlayers = Read-Host "`nHello $name. How many players would you like to participate"
+>>
+>> if ($numOfPlayers -lt 5)
+>> {
+>> write-host "welcome to the squid game"
+>> }
+>>
+>> elseif ($numOfPlayers -ge 5)
+>> {
+>> write-host "there are too many players"
+>> }
+
+
+do {
+
+} while ($ip -ne $var1) -or ($ip -notmatch $var)
+
+-------------------------------------------------
+logical operators:
+-or -and -xor -not !()
