@@ -1,5 +1,9 @@
 # A few one liners needs work...
 
+# have a look at the script on this website: 
+# https://www.powershellbros.com/extract-ip-address-from-log-lines-using-powershell/
+
+
 # setting variable for later use:
 $ip = '^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)'
 
