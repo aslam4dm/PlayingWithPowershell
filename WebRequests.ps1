@@ -1,4 +1,5 @@
-#useless program
+#useless program that doesn't work
+
 # asks for user input | performs a request to specified URI writes output | searches lines in output for URI and counts them
 
 $uri = Read-Host "Enter a valid URI"
