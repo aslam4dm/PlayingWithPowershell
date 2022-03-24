@@ -14,7 +14,10 @@ for ($c=1; $c -ne $numberOfPlayers+1; $c++)
 {
   $players += "player $c"
 }
-write-host $players
+# `n for newline
+write-host $`nplayers
+$players.clear()
+
 
 $regexCheck = '^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)'
 # IPv4 address ^
