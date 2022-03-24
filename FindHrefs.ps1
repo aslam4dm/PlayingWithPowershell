@@ -1,12 +1,14 @@
 # Modify to take arguments - where user can choose whether they want to collect all domains, subdomains or specific target domains 
 # Use functions to better organise code
 
+# use .split() to split by single character | use -split "xyz" to split by string
+
 $uri = Read-Host "Enter a valid URI"
 
 
  if ($uri.contains("."))
  {
-   $uriBaseTemp = @($uri.split("`."))
+   $uriBaseTemp = $uri.split("`.")
  }
  $uriBase = $uriBaseTemp[0]
 
